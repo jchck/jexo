@@ -1,0 +1,23 @@
+<!--
+	Common <head> block
+	Included via layout.ejs
+
+	Sets site <title> and <meta> elements via ./_config.yml
+	Sets the Tachyons version via ./themes/jexo/_config.yml
+	Loads theme CSS via https://hexo.io/docs/helpers.html#css
+	Includes _partials/analytics.ejs
+-->
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>
+		<%= page.title ? page.title : config.title %>
+	</title>
+	<meta name="author" content="<%= config.author %>">
+	<meta name="description" content="<%= config.description %>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="//unpkg.com/tachyons@<%= theme.tv %>/css/tachyons.min.css"/>
+	<%-  css('css/jexo.css') %>
+	<%- partial('_partials/analytics') %>	
+</head>
