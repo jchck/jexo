@@ -1,0 +1,13 @@
+<!-- 
+	This loops thru content excerpt's 
+
+	Included via index.ejs
+
+	Includes _partials/content-excerpt.ejs with local var item: item
+
+-->
+<% page.posts.each(function(item){ %>
+	
+	<%- partial('content-excerpt', {item: item}) %>
+
+<% }); %>

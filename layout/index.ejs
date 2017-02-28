@@ -1,5 +1,14 @@
 <!--
 	This the front page of the site
 	@link https://hexo.io/docs/templates.html
+
+	Included via layout.ejs
+
+	Includes _partials/excerpt.ejs
+	Includes _partials/pagination.ejs
 -->
-<p class="tc">This is index</p>
+<p class="tc">This is the index template</p>
+
+<%- partial('_partials/excerpt') %>
+
+<%- partial('_partials/pagintion') %>

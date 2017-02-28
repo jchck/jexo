@@ -1,0 +1,14 @@
+<article>
+
+	<h3><a href="<%- config.root %><%- item.path%>"><%- item.title %></a></h3>
+
+	
+	<!-- Content -->
+	<%- item.excerpt || item.content %>
+
+	<!-- Only display the Read More link if we are displaying an excerpt -->
+	<% if(item.excerpt) { %>
+			<a href="<%- config.root %><%- item.path %>"><%= theme.excerpt_link %></a>
+	<% } %>
+	
+</article>
