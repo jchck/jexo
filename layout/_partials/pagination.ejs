@@ -1,0 +1,14 @@
+<!--
+	This is the pagination links 
+
+	@link https://hexo.io/docs/variables.html
+
+	Included via archive.ejs
+-->
+<% if (page.prev){ %>
+    <a href="<%- config.root %><%- page.prev_link %>">Previous</a>
+<% } %>
+
+<% if (page.next){ %>
+    <a href="<%- config.root %><%- page.next_link %>">Next</a>
+<% } %>

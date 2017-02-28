@@ -1,0 +1,20 @@
+<!--
+	This is a <div> returning a link to the content, the content's title, date, and author if set
+
+	@link https://hexo.io/docs/variables.html
+
+	Included via archive.ejs
+-->
+
+<div>
+	<a href="<%- config.root %><%- item.path %>">
+		<%- item.title || item.link%>
+	</a>
+
+	<p>
+        <%= item.date.format(config.date_format) %>
+        <% if(item.author) { %>
+            by <%- item.author %>
+        <% } %>
+    </p>
+</div>
