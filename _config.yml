@@ -5,3 +5,8 @@ tv: 4.6.1
 
 ## google analytics
 ga: UA-00000000-0
+
+## nav items
+menu:
+  Home: /
+  Archives: /archives
