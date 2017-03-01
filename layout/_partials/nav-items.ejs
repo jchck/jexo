@@ -1,7 +1,7 @@
 <ul>
-	<% for (var item in theme.menu){ %>
+	<% for (var i in theme.menu){ %>
 		<li>
-			<a href="<%- url_for(theme.menu[item]) %>"><%= item %></a>
+			<a href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
 		</li>
 	<% } %>
 </ul>
